@@ -84,7 +84,15 @@ footer.page-footer {
   src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
 }
 
+.main-title, .catchy-phrase{
+  font-family: "Avenir-next", sans-serif;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.avenir{
+  font-family: "Avenir-next", sans-serif;
+}
+
 .orrr{
   font-family: "Baskerville", sans-serif;
-
 }
