@@ -1,7 +1,7 @@
 
 {% macro add_nav_bar_link(text, link) %}
     
-    <li class="nav_option"><a href="{{link}}">{{text}}</a></li>
+    <li class="nav_option"><a class="waves-effect" href="{{link}}">{{text}}</a></li>
 
 {% endmacro %}
 
@@ -22,13 +22,16 @@
 
             {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
             {{ add_nav_bar_link ('Apple', 'https://www.apple.com')}}
-                    {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
+            {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
+
+
+
+
 
 
         </ul>
-
-        <ul id="nav-mobile" class="sidenav">
-            <li class="nav_option"><a href="{{url_for('main.index')}}">Home</a></li>
+         <ul id="nav-mobile" class="sidenav">
+            <li class="nav_option"><a class="waves-effect" href="{{url_for('main.index')}}">Home</a></li>
             {{ add_nav_bar_link ('Google', 'https://www.google.com')}}
             {{ add_nav_bar_link ('Duck', 'https://www.duckduckgo.com')}}
             {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
@@ -37,5 +40,7 @@
             </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+    
     </nav>
 </div>
+       

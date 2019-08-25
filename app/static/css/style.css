@@ -56,7 +56,11 @@ footer.page-footer {
   margin: 0;
 }
 
+
+
+
 /* custom css */
+
 
 .nav_option{
   color: black !important;  
@@ -64,4 +68,23 @@ footer.page-footer {
 
 .home_logo{
   max-width: 100px !important;
+}
+
+.parallax-container {
+  height: 450px;
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: url(../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Avenir-next";
+  src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
+}
+
+.orrr{
+  font-family: "Baskerville", sans-serif;
+
 }
