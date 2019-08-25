@@ -1,0 +1,11 @@
+{% macro create_icon_section(icon, title, link_to_info, description)%}
+<div class="col s12 m4">
+    <div class="icon-block">
+        <h2 class="center orange-text-special avenir"><i class="material-icons">{{icon}}</i></h2>
+        <h5 class="center">{{title}}</h5>
+
+        <p class="center-align light avenir">{{description}}</p>
+        <p class="center-align light avenir">  <a href="{{url_for(link_to_info)}}">Click here</a> to learn more. </p>
+    </div>
+</div>
+{% endmacro %}

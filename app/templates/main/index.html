@@ -1,6 +1,20 @@
 {% extends "layout.html" %}
 {% block main %}
 
+{% macro create_icon_section(icon, title, link_to_info, description)%}
+<div class="col s12 m4">
+    <div class="icon-block">
+        <h2 class="center orange-text-special avenir"><i class="material-icons">{{icon}}</i></h2>
+        <h5 class="center">{{title}}</h5>
+
+        <p class="center-align light avenir">{{description}}</p>
+        <p class="center-align light avenir">  <a href="{{url_for(link_to_info)}}">Click here</a> to learn more. </p>
+    </div>
+</div>
+{% endmacro %}
+
+
+
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -9,9 +23,6 @@
         <div class="row center">
           <h5 class="header col s12 light catchy-phrase">Reducing waste through thrifting, one item at a time.</h5>
         </div>
-
-  
-
       </div>
     </div>
     <div class="parallax"><img src="{{ url_for('static', filename='images/popup_shop.jpg') }}" alt="Unsplashed background img 1"></div>
@@ -23,8 +34,8 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="avenir">Our Mission</h4>
-          <p class="center-align light avenir"> Cornell Thrift’s mission is to reduce campus-wide waste through redistribution of reusable personal items, inspired by the concept of “free-piles” seen in university co‐operative housing, along with the annual Dump-and-Run sale. We want to see reusable clothes, homeware, electronics, and small furniture going into homes and not trashcans – all year round.</p>
+          <h4 class="avenir our-mission">Our Mission</h4>
+          <p class="center-align light avenir mission-blurb"> Our goal is to reduce campus-wide waste through redistribution of reusable personal items, inspired by the concept of “free-piles” seen in university co‐operative housing, along with the annual Dump-and-Run sale. We want to see reusable clothes, homeware, electronics, and small furniture going into homes and not trashcans – all year round.</p>
         </div>
       </div>
 
@@ -34,35 +45,23 @@
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
+        {{ create_icon_section('flash_on', 'Making it Easy', 'main.ezras_exchange', 
+          "We want to make thrifting easy and accessible to everyone on campus, no matter where you are. 
+          Our Ezra's Exchange closet space allows students to donate and find new clothes for free in convenient 
+          locations around campus.") }}
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+          {{ create_icon_section('school', 'Educating Others', 'main.mending_workshops', 
+          "Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime. 
+          By hosting workshops teaching students how to repair, mend, and recycle clothes, we give them the skills 
+          necessary to help them reduce waste even beyond college.") }}
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
+          {{ create_icon_section('local_grocery_store', 'Taking Action', 'main.pop_up_shops', 
+          "One man's trash is one man's treasure. We help eliminate waste on campus by hosting pop-up shops during 
+          the school year. Students can donate their unwanted items to us so we can help redistribute it to those who 
+          may want them.") }}
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -161,7 +160,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
