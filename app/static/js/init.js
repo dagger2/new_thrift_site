@@ -2,17 +2,21 @@ $(document).ready(function(){
   $('.parallax').parallax();
   $('.sidenav').sidenav();
 
+  if($(this).scrollTop() <= 0){
+    $('.home-logo').removeClass('home-logo-below');
+  }
 
-  // if( $(window).scrollTop() === 0){
-  //   console.log('at the top');
-  //   $('.center-logo').width(700); 
-  //   $('.center-logo').height(700);
-  // }
+  $(document).scroll(function() {
+    if($(this).scrollTop() <= 0){
+      $('.home-logo').removeClass('home-logo-below');
+    }
+    else{
+      $('.home-logo').addClass('home-logo-below');
+    }
+  });
 
   $('#refresh').click(function(){
-    console.log('rfreshed');
     window.location.reload(true);
-
   });
 
 });

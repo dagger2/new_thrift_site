@@ -42,4 +42,9 @@ def hello():
 def dino_game():
     return render_template('main/dino_game.html')
 
+@bp.route('/credits')
+def credits():
+    return render_template('main/credits.html')
+
+
 # @bp.errorhandler(404)

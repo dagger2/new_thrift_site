@@ -69,7 +69,12 @@ footer.page-footer {
 }
 
 .home-logo, .home-logo-nav{
-  max-width: 100px !important;
+  width: 150px;
+  transition: width .15s;
+}
+
+.home-logo-below{
+  width: 100px;
 }
 /* .home-logo-nav{
   -webkit-touch-callout: none;
@@ -77,6 +82,7 @@ footer.page-footer {
 
 body{
   -webkit-touch-callout: none;
+  overscroll-behavior: none;
 }
 
 .parallax-container {
@@ -159,4 +165,10 @@ body{
 
 #refresh{
   background-color: red;
+}
+.sidenav-trigger{
+  color: #362f2d;
+}
+.move-down{
+  margin-top: 100px;
 }
