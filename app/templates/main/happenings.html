@@ -3,7 +3,7 @@
 
 
 {% macro display_event(name, description, photo, subheading=none, link_title=none, link=none,link_type=none)%}
-<div class="col s12 m6 s6 happening-card" style="margin-bottom: 50px;">
+<div class="col s12 m6 s6 happening-card">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="{{ url_for('static', filename=photo) }}">
