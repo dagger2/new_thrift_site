@@ -2,12 +2,12 @@
   "name": "Cornell Thrift",
   "short_name": "Cornell Thrift",
   "description": "The Cornell Thrift Website",
-  "theme_color": "transparent",
-  "background_color": "transparent",
+  "theme_color": "white",
+  "background_color": "white",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/happenings",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

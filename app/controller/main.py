@@ -12,7 +12,7 @@ def index():
 
 @bp.route('/events/ezras_exchange')
 def ezras_exchange():
-    return render_template('main/hello.html')
+    return render_template('main/events.html')
 
 @bp.route('/events/mending-workshops')
 def mending_workshops():
@@ -44,7 +44,7 @@ def happenings():
 
 @bp.route('/events/pop-up-shops')
 def pop_up_shops():
-    return render_template('main/hello.html')
+    return render_template('main/events.html')
 
 @bp.route('/hello')
 def hello():
