@@ -127,6 +127,12 @@ footer.page-footer {
 .learn-more{
   background-color: #ff6e16;
 }
+.learn-more:hover{
+  background-color: #ffa216;
+}
+.learn-more:active{
+  background-color: #d45f16;
+}
 
 @media only screen and (max-width: 500px) {
   .main-title{
