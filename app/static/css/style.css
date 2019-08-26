@@ -25,9 +25,9 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -71,7 +71,11 @@ footer.page-footer {
 .home-logo, .home-logo-nav{
   max-width: 100px !important;
 }
-.home-logo-nav{
+/* .home-logo-nav{
+  -webkit-touch-callout: none;
+} */
+
+body{
   -webkit-touch-callout: none;
 }
 
@@ -154,5 +158,5 @@ footer.page-footer {
 }
 
 #refresh{
-  background-color: green;
+  background-color: red;
 }
