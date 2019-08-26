@@ -60,7 +60,9 @@ footer.page-footer {
 
 
 /* custom css */
-
+.instagram-media{
+  margin:0 auto !important;
+}
 
 .nav_option{
   color: black !important;  
