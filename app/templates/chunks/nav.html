@@ -1,23 +1,28 @@
 
-{% macro add_nav_bar_link(text, link) %}
-    <li class="nav_option"><a class="waves-effect avenir" href="{{url_for(link)}}">{{text}}</a></li>
+{% macro add_nav_bar_link(text, link, gap) %}
+    <li class="nav_option">
+        <a class="waves-effect avenir 
+        {% if gap is not none %}
+        {{gap}}
+        {% endif %}" href="{{url_for(link)}}">{{text}}</a></li>
 {% endmacro %}
 
 
-{% set links = [['Happenings', 'main.happenings'], 
-                ['Members', 'main.members'], 
-                ['Connect', 'main.connect']] %}
+{% set links = [['Happenings', 'main.happenings', none], 
+                ['Members', 'main.members', 'create-gap-right'],
+                ['Resources', 'main.resources', 'create-gap-left'],
+                ['Connect', 'main.connect', none],] %}
 
 <div class="navbar-fixed">
-    <nav class="white" role="navigation">
-    <div class="nav-wrapper container ">
+    <nav class="white nav-center" role="navigation">
+    <div class="nav-wrapper container">
         <a class="brand-logo center center-logo" href="{{url_for('main.index')}}">  
             <img class="home-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
         </a>
 
-        <ul class="left hide-on-med-and-down">
+        <ul class="center hide-on-med-and-down">
             {% for link in links %}
-            {{ add_nav_bar_link(link[0], link[1])}}
+            {{ add_nav_bar_link(link[0], link[1], link[2])}}
             {% endfor %}
         </ul>
         

@@ -16,7 +16,11 @@ def ezras_exchange():
 
 @bp.route('/events/mending-workshops')
 def mending_workshops():
-    return render_template('main/hello.html')
+    return render_template('main/events.html')
+
+@bp.route('/resources')
+def resources():
+    return render_template('main/resources.html')
 
 @bp.route('/members')
 def members():

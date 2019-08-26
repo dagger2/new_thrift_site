@@ -107,6 +107,24 @@ body{
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+
+.create-gap-left{
+  margin-left: 40px;
+}
+.create-gap-right{
+  margin-right: 60px;
+}
+
 .avenir{
   font-family: "Avenir-next", sans-serif;
 }
