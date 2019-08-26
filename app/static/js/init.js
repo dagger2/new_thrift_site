@@ -9,5 +9,10 @@ $(document).ready(function(){
   //   $('.center-logo').height(700);
   // }
 
+  $('#refresh').click(function(){
+    console.log('rfreshed');
+    window.location.reload(true);
+
+  });
 
 });
