@@ -170,5 +170,11 @@ body{
   color: #362f2d;
 }
 .move-down{
-  margin-top: 100px;
+  margin-top: 65px;
+}
+.with-subheading{
+  margin-bottom: 0px !important;
+}
+.spacer{
+  margin-top: 15px !important;
 }

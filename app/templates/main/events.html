@@ -2,41 +2,33 @@
 {% block main %}
 
 
-{% macro display_event(name, description, photo)%}
- <div class="card">
+{% macro display_event(name, date, description, photo)%}
+<div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
+        <img class="activator" src="{{ url_for('static', filename=photo) }}">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">Learn More</a></p>
+      <span class="card-title activator grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">more_vert</i></span>
+      <span class="activator grey-text text-darken-1">{{date}}</span>
+      <p class="spacer"><a href="#">More Details</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">close</i></span>
+      <span class="activator grey-text text-darken-1">{{date}}</span>
       <p>{{description}}</p>
     </div>
-  </div>
+</div>
 {% endmacro %}
 
 
 
 
-<div class="container move-down">
-<h1 class="center-align"> Events </h1> 
+<div class="container">
     <div class="section">
-         <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/background1.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-        </div>
+    <h1 class="center-align move-down"> Events </h1> 
+        {{ display_event('Event', '08/23', 'This is a sample event', 'images/background1.jpg') }}
+        {{ display_event('Another Event', '08/24', 'This is a sample event', 'images/background2.jpg') }}
+        {{ display_event('Additional Event', '09/21', 'This is a sample event', 'images/background3.jpg') }}
     </div>
 </div>
 
