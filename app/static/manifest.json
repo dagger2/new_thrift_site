@@ -1,7 +1,7 @@
 {
-  "name": "Flask-PWA",
-  "short_name": "Flask-PWA",
-  "description": "A progressive webapp template built with Flask",
+  "name": "Cornell Thrift",
+  "short_name": "CU Thrift",
+  "description": "The Cornell Thrift Website",
   "theme_color": "transparent",
   "background_color": "transparent",
   "display": "standalone",

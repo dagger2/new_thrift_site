@@ -1,30 +1,24 @@
 
 {% macro add_nav_bar_link(text, link) %}
-    
-    <li class="nav_option"><a class="waves-effect" href="{{link}}">{{text}}</a></li>
-
+    <li class="nav_option"><a class="waves-effect avenir" href="{{url_for(link)}}">{{text}}</a></li>
 {% endmacro %}
 
 
-{% set links = ['Home'] %}
+{% set links = [['Events', 'main.events'], 
+                ['Members', 'main.members'], 
+                ['Contact Us', 'main.contact']] %}
 
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
     <div class="nav-wrapper container ">
+        <a class="brand-logo center center-logo" href="{{url_for('main.index')}}">  
+            <img class="home_logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
+        </a>
 
         <ul class="left hide-on-med-and-down">
-            
-            {{ add_nav_bar_link ('Google', 'https://www.google.com')}}
-            {{ add_nav_bar_link ('Duck', 'https://www.duckduckgo.com')}}
-            <a class="brand-logo center" href="{{url_for('main.index')}}">  
-                <img class="home_logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
-            </a>
-
-            {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
-            {{ add_nav_bar_link ('Apple', 'https://www.apple.com')}}
-            {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
-
-
+            {% for link in links %}
+            {{ add_nav_bar_link(link[0], link[1])}}
+            {% endfor %}
         </ul>
         
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -36,9 +30,9 @@
        
        
 <ul id="nav-mobile" class="sidenav">
-            <li class="nav_option"><a class="waves-effect" href="{{url_for('main.index')}}">Home</a></li>
-            {{ add_nav_bar_link ('Google', 'https://www.google.com')}}
-            {{ add_nav_bar_link ('Duck', 'https://www.duckduckgo.com')}}
-            {{ add_nav_bar_link ('bing', 'https://www.bing.com')}}
-            {{ add_nav_bar_link ('Apple', 'https://www.apple.com')}}
+    <img class="home_logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
+
+    <li class="nav_option"><a class="waves-effect" href="{{url_for('main.index')}}">Home</a></li>
+
+
     </ul>

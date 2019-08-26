@@ -8,7 +8,7 @@ bp = Blueprint('main', __name__)
 @bp.route('/')
 def index():
     return render_template('main/index.html',
-                           title='Cornell Thrift Test')
+                           title='Cornell Thrift')
 
 @bp.route('/events/ezras_exchange')
 def ezras_exchange():
@@ -18,9 +18,17 @@ def ezras_exchange():
 def mending_workshops():
     return render_template('main/hello.html')
 
-@bp.route('/e-board')
-def e_board():
-    return render_template('main/e-board.html')
+@bp.route('/members')
+def members():
+    return render_template('main/members.html')
+
+@bp.route('/contact')
+def contact():
+    return render_template('main/contact.html')
+
+@bp.route('/events')
+def events():
+    return render_template('main/events.html')
 
 @bp.route('/events/pop-up-shops')
 def pop_up_shops():
