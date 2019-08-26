@@ -12,7 +12,7 @@
     <nav class="white" role="navigation">
     <div class="nav-wrapper container ">
         <a class="brand-logo center center-logo" href="{{url_for('main.index')}}">  
-            <img class="home_logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
+            <img class="home-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
         </a>
 
         <ul class="left hide-on-med-and-down">
@@ -23,15 +23,13 @@
         
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    
     </nav>
-     
 </div>
        
        
 <ul id="nav-mobile" class="sidenav">
     <a class="brand-logo center center-logo" href="{{url_for('main.index')}}">  
-        <img class="home_logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
+        <img class="home-logo-nav" src="{{ url_for('static', filename='images/logo.png') }}" alt="test logo">
     </a>
     <li class="nav_option"><a class="waves-effect avenir" href="{{url_for('main.index')}}">Home</a></li>
 

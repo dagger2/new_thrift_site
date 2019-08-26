@@ -7,8 +7,10 @@
         <h2 class="center orange-text-special avenir"><i class="material-icons">{{icon}}</i></h2>
         <h5 class="center">{{title}}</h5>
 
-        <p class="center-align light avenir">{{description}}</p>
-        <p class="center-align light avenir">  <a href="{{url_for(link_to_info)}}">Click here</a> to learn more. </p>
+        <p class="center-align light avenir description">{{description}}</p>
+        <div style="text-align: center;">
+          <a href="{{url_for(link_to_info)}}" class="waves-effect waves-light learn-more btn">Learn More</a>
+        </div>
     </div>
 </div>
 {% endmacro %}

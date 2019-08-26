@@ -68,7 +68,7 @@ footer.page-footer {
   color: black !important;  
 }
 
-.home_logo{
+.home-logo, .home-logo-nav{
   max-width: 100px !important;
 }
 
@@ -111,6 +111,9 @@ footer.page-footer {
 .orange-text-special{
   color: #ff6e16;
 }
+.description{
+  text-align: justify !important;
+}
 
 .our-mission{
   font-size: 40px;
@@ -120,8 +123,9 @@ footer.page-footer {
   text-align: center;
 }
 
-.center-logo:hover{
-  margin: auto auto;
+
+.learn-more{
+  background-color: #ff6e16;
 }
 
 @media only screen and (max-width: 500px) {
@@ -132,4 +136,10 @@ footer.page-footer {
     font-size: 17px;
   }
   
+
+}
+@media only screen and (max-width: 993px) {
+  .home-logo{
+    display: none;
+  }
 }
