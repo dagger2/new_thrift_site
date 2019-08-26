@@ -147,22 +147,6 @@ body{
   background-color: #d45f16;
 }
 
-@media only screen and (max-width: 500px) {
-  .main-title{
-    font-size: 70px;
-  }
-  .mission-blurb{
-    font-size: 17px;
-  }
-  
-
-}
-@media only screen and (max-width: 993px) {
-  .home-logo{
-    display: none;
-  }
-}
-
 #refresh{
   background-color: red;
 }
@@ -177,4 +161,23 @@ body{
 }
 .spacer{
   margin-top: 15px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-title{
+    font-size: 70px;
+  }
+  .mission-blurb{
+    font-size: 17px;
+  }
+  
+
+}
+@media only screen and (max-width: 993px) {
+  .home-logo{
+    display: none;
+  }
+  .move-down{
+    margin-top: 0px;
+  }
 }

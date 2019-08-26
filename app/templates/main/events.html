@@ -2,19 +2,21 @@
 {% block main %}
 
 
-{% macro display_event(name, date, description, photo)%}
+{% macro display_event(name, description, photo, subheading=none)%}
 <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="{{ url_for('static', filename=photo) }}">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">more_vert</i></span>
-      <span class="activator grey-text text-darken-1">{{date}}</span>
-      <p class="spacer"><a href="#">More Details</a></p>
+        <span class="card-title activator grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">more_vert</i></span>
+        {% if subheading is not none %}
+        <span class="activator grey-text text-darken-1">{{subheading}}</span>
+        {% endif %}
+        <p class="spacer"><a href="#">More Details</a></p>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">close</i></span>
-      <span class="activator grey-text text-darken-1">{{date}}</span>
+      <span class="activator grey-text text-darken-1">{{subheading}}</span>
       <p>{{description}}</p>
     </div>
 </div>
@@ -23,12 +25,12 @@
 <div class="container">
     <div class="section">
     <h1 class="center-align move-down"> Events </h1> 
-        {{ display_event("Ezra's Exchange", '08/23', "Ezra's Exchange is a closet space open in the browsing 
+        {{ display_event("Ezra's Exchange", "Ezra's Exchange is a closet space open in the browsing 
             library in Willard Straight Hall. The closet's slogan is 'Free to Give, Free to Take.' 
             Here you can donate clothes and find new ones for free! Open whenever Willard Straight is!", 
             'images/background1.jpg') }}
-        {{ display_event('Another Event', '08/24', 'This is a sample event', 'images/background2.jpg') }}
-        {{ display_event('Additional Event', '09/21', 'This is a sample event', 'images/background3.jpg') }}
+        {{ display_event('Behind the Seams', 'This is a sample event', 'images/background2.jpg') }}
+        {{ display_event('Additional Event', 'This is a sample event', 'images/background3.jpg') }}
     </div>
 </div>
 
