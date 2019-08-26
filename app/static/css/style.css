@@ -149,3 +149,7 @@ footer.page-footer {
     display: none;
   }
 }
+
+#refresh{
+  background-color: blue;
+}
