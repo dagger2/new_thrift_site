@@ -117,7 +117,9 @@ nav.nav-center ul li {
 nav.nav-center ul li a {
   display: inline-block;
 }
-
+.card.medium, .card-image, .card.large .card-image {
+  max-height: 70% !important;
+}
 .create-gap-left{
   margin-left: 60px;
 }
@@ -180,7 +182,7 @@ nav.nav-center ul li a {
   margin-bottom: 0px !important;
 }
 .spacer{
-  margin-top: 15px !important;
+  margin-top: 3px !important;
 }
 .connect-icon{
   max-width: 300px;
@@ -188,10 +190,10 @@ nav.nav-center ul li a {
 .connect-div{
   text-align: center;
 }
-.card-photo{
-  max-height: 300px;
+/* .card.medium .card-image, .card.large .card-image{
+  max-height: 80%;
+} */
 
-}
 .connect-heading{
   margin-bottom: 50px;
 }
