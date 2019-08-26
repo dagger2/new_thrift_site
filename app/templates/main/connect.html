@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block main %}
+
+  <div class="container">
+    <div class="section">
+        <h1 class="center-align move-down"> Connect with Us </h1>
+ 
+
+
+        <div class="row">
+            <div class="col s12 m4 l4 connect-div">
+                <a href="mailto:cornellthrift@gmail.com">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/mail.svg') }}" 
+                        alt="A picture of an E-Mail logo, linking to the Cornell Thrift's Email. "/>
+                </a>
+            </div> 
+            <div class="col s12 m4 l4 connect-div">
+                <a href="https://www.facebook.com/cornellthrift/">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/facebook.svg') }}" 
+                        alt="A picture of the Facebook logo, linking to the Cornell Thrift's Facebook Page."/>
+                </a>
+            </div> 
+            <div class="col s12 m4 l4 connect-div">
+                <a href="https://www.instagram.com/cornellthrift/">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/instagram.svg') }}" 
+                        alt="A picture of the Instagram logo, linking to the Cornell Thrift's Instagram Page."/>
+                </a>
+            </div> 
+        </div>
+    </div>
+</div>
+
+{% endblock %}

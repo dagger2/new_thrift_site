@@ -22,9 +22,13 @@ def mending_workshops():
 def members():
     return render_template('main/members.html')
 
+@bp.route('/connect')
+def connect():
+    return render_template('main/connect.html')
+
 @bp.route('/contact')
 def contact():
-    return render_template('main/contact.html')
+    return redirect(url_for('main.connect'))
 
 @bp.route('/events')
 def events():

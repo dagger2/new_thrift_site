@@ -165,7 +165,13 @@ body{
   margin-top: 15px !important;
 }
 
+.connect-icon{
+  max-width: 300px;
+}
 
+.connect-div{
+  text-align: center;
+}
 
 @media only screen and (max-width: 500px) {
   .main-title{
@@ -174,8 +180,6 @@ body{
   .mission-blurb{
     font-size: 17px;
   }
-  
-
 }
 @media only screen and (max-width: 993px) {
   .home-logo{
@@ -185,3 +189,24 @@ body{
     margin-top: 0px;
   }
 }
+@media only screen and (max-width: 1310px) {
+  .connect-icon{
+    max-width: 250px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .connect-icon{
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 716px) {
+  .connect-icon{
+    max-width: 150px;
+  }
+}
+@media only screen and (max-width: 601px) {
+  .connect-icon{
+    max-width: 250px;
+  }
+}
+
