@@ -164,15 +164,16 @@ body{
 .spacer{
   margin-top: 15px !important;
 }
-
 .connect-icon{
   max-width: 300px;
 }
-
 .connect-div{
   text-align: center;
 }
 
+.connect-heading{
+  margin-bottom: 50px;
+}
 @media only screen and (max-width: 500px) {
   .main-title{
     font-size: 70px;
@@ -207,6 +208,9 @@ body{
 @media only screen and (max-width: 601px) {
   .connect-icon{
     max-width: 250px;
+  }
+  .connect-heading{
+    margin-bottom: 20px;
   }
 }
 
