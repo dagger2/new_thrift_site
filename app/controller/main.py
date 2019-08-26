@@ -12,11 +12,11 @@ def index():
 
 @bp.route('/events/ezras_exchange')
 def ezras_exchange():
-    return render_template('main/events.html')
+    return render_template('main/happenings.html')
 
 @bp.route('/events/mending-workshops')
 def mending_workshops():
-    return render_template('main/events.html')
+    return render_template('main/happenings.html')
 
 @bp.route('/resources')
 def resources():
