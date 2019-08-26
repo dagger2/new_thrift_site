@@ -30,6 +30,10 @@ def contact():
 def events():
     return render_template('main/events.html')
 
+@bp.route('/happenings')
+def happenings():
+    return render_template('main/events.html')
+
 @bp.route('/events/pop-up-shops')
 def pop_up_shops():
     return render_template('main/hello.html')

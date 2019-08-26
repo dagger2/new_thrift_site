@@ -14,7 +14,6 @@
         {% endif %}
         {% if link is not none %}
         <p class="spacer">
-        
         <a href="
         {% if link_type == 'external'%}
             {{link}}
@@ -30,13 +29,25 @@
         <span class="activator grey-text text-darken-1">{{subheading}}</span>
         {% endif %}
         <p>{{description}}</p>
+
+        {% if link is not none %}
+        <p class="spacer">
+        <a href="
+        {% if link_type == 'external'%}
+            {{link}}
+        {% else %}
+            {{url_for(link)}}
+        {% endif %}
+        ">{{link_title}}</a></p>
+        {% endif %}
     </div>
 </div>
 {% endmacro %}
 
 <div class="container">
     <div class="section">
-    <h1 class="center-align move-down"> Events </h1> 
+    <h1 class="center-align move-down"> Happenings </h1> 
+
         {{ display_event("Ezra's Exchange", "Ezra's Exchange is a closet space open in the browsing 
             library in Willard Straight Hall. The closet's slogan is 'Free to Give, Free to Take.' 
             Here you can donate clothes and find new ones for free! Open whenever Willard Straight is!", 
@@ -44,8 +55,10 @@
         {{ display_event('Behind the Seams', "Behind the Seams is a photo campaign to get people thinking 
         about the value of clothes by sharing the stories they hold. We're hoping to reduce waste by having 
         people rethink the way they see their clothes. New photos go up on our Cornell Thrift Instagram 
-        page every week.", 'images/behind_the_seams.jpg', none,'Check out our Instagram Page', "https://www.instagram.com/cornellthrift/?utm_source=ig_embed", 'external' ) }}
+        page every week.", 'images/behind_the_seams.jpg', none,'Check out our Instagram Page', 
+        "https://www.instagram.com/cornellthrift/?utm_source=ig_embed", 'external' ) }}
         {{ display_event('Additional Event', 'This is a sample event', 'images/background3.jpg') }}
+
     </div>
 </div>
 
