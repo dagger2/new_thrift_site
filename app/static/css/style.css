@@ -58,7 +58,6 @@ footer.page-footer {
 
 
 
-
 /* custom css */
 .instagram-media{
   margin:0 auto !important;
@@ -136,6 +135,9 @@ body{
   text-align: center;
 }
 
+.event-holder{
+  max-width: 500px;
+}
 
 .learn-more{
   background-color: #ff6e16;

@@ -2,7 +2,7 @@
 {% block main %}
 
 
-{% macro display_event(name, description, photo, subheading=none)%}
+{% macro display_event(name, description, photo, subheading=none, link_title=none, link=none,link_type=none)%}
 <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="{{ url_for('static', filename=photo) }}">
@@ -12,12 +12,24 @@
         {% if subheading is not none %}
         <span class="activator grey-text text-darken-1">{{subheading}}</span>
         {% endif %}
-        <p class="spacer"><a href="#">More Details</a></p>
+        {% if link is not none %}
+        <p class="spacer">
+        
+        <a href="
+        {% if link_type == 'external'%}
+            {{link}}
+        {% else %}
+            {{url_for(link)}}
+        {% endif %}
+        ">{{link_title}}</a></p>
+        {% endif %}
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">close</i></span>
-      <span class="activator grey-text text-darken-1">{{subheading}}</span>
-      <p>{{description}}</p>
+        <span class="card-title grey-text text-darken-4 with-subheading">{{name}}<i class="material-icons right">close</i></span>
+        {% if subheading is not none %}
+        <span class="activator grey-text text-darken-1">{{subheading}}</span>
+        {% endif %}
+        <p>{{description}}</p>
     </div>
 </div>
 {% endmacro %}
@@ -29,7 +41,10 @@
             library in Willard Straight Hall. The closet's slogan is 'Free to Give, Free to Take.' 
             Here you can donate clothes and find new ones for free! Open whenever Willard Straight is!", 
             'images/background1.jpg') }}
-        {{ display_event('Behind the Seams', 'This is a sample event', 'images/background2.jpg') }}
+        {{ display_event('Behind the Seams', "Behind the Seams is a photo campaign to get people thinking 
+        about the value of clothes by sharing the stories they hold. We're hoping to reduce waste by having 
+        people rethink the way they see their clothes. New photos go up on our Cornell Thrift Instagram 
+        page every week.", 'images/behind_the_seams.jpg', none,'Check out our Instagram Page', "https://www.instagram.com/cornellthrift/?utm_source=ig_embed", 'external' ) }}
         {{ display_event('Additional Event', 'This is a sample event', 'images/background3.jpg') }}
     </div>
 </div>
