@@ -188,7 +188,10 @@ nav.nav-center ul li a {
 .connect-div{
   text-align: center;
 }
+.card-photo{
+  max-height: 300px;
 
+}
 .connect-heading{
   margin-bottom: 50px;
 }
