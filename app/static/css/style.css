@@ -165,6 +165,8 @@ body{
   margin-top: 15px !important;
 }
 
+
+
 @media only screen and (max-width: 500px) {
   .main-title{
     font-size: 70px;

@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, render_template, app, Flask
+    Blueprint, render_template, app, redirect, url_for, abort
 )
 
 bp = Blueprint('main', __name__)
@@ -28,11 +28,11 @@ def contact():
 
 @bp.route('/events')
 def events():
-    return render_template('main/events.html')
+    return redirect(url_for('main.happenings'))
 
 @bp.route('/happenings')
 def happenings():
-    return render_template('main/events.html')
+    return render_template('main/happenings.html')
 
 @bp.route('/events/pop-up-shops')
 def pop_up_shops():
@@ -51,4 +51,14 @@ def credits():
     return render_template('main/credits.html')
 
 
-# @bp.errorhandler(404)
+
+
+
+@bp.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return render_template('errors/04.html'), 404
+
+@bp.route("/<path:invalid_path>")
+def handle_unmatchable(*args, **kwargs):
+    abort(404)
