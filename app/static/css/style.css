@@ -131,10 +131,6 @@ nav.nav-center ul li a {
   font-family: "Avenir-next", sans-serif;
 }
 
-.orrr{
-  font-family: "Baskerville", sans-serif;
-}
-
 .mission-blurb{
   font-size: 22px;
   line-height: 2.0;
@@ -183,6 +179,9 @@ nav.nav-center ul li a {
 }
 .spacer{
   margin-top: 3px !important;
+}
+h1, h2, h3, h4, h5, p, input, label{
+  font-family: "Avenir-next", sans-serif;
 }
 .connect-icon{
   max-width: 150px;
