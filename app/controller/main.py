@@ -58,15 +58,20 @@ def dino_game():
 def credits():
     return render_template('main/credits.html')
 
+@bp.app_errorhandler(403)
+def handle_403(err):
+    return render_template('errors/error.html', 
+        error='403', 
+        message="Internal Server Error. Sorry, that's our fault. Please check back later."), 403
 
+@bp.app_errorhandler(404)
+def handle_404(err):
+    return render_template('errors/error.html', 
+        error='404', 
+        message='Page not Found. Check your URL to make sure you typed it in correctly.'), 404
 
-
-
-@bp.errorhandler(404)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template('errors/04.html'), 404
-
-@bp.route("/<path:invalid_path>")
-def handle_unmatchable(*args, **kwargs):
-    abort(404)
+@bp.app_errorhandler(500)
+def handle_500(err):
+    return render_template('errors/error.html', 
+        error='500',
+        message="Internal Server Error. Sorry that's our fault. Please check back again later."), 500
