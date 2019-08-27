@@ -1,9 +1,9 @@
 {
   "name": "Cornell Thrift",
-  "short_name": "Cornell Thrift",
-  "description": "The Cornell Thrift Website",
-  "theme_color": "white",
-  "background_color": "white",
+  "short_name": "CU Thrift",
+  "description": "Catch the latest updates from Cornell Thrift!",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",

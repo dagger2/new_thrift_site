@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title> Cornell Thrift </title>
-  <meta name="description" content="Cornell Thrift Website">
+  <meta name="description" content="Catch the latest updates from Cornell Thrift!">
   <meta name="theme-color" content="transparent">
   <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
@@ -13,9 +13,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Cornell Thrift">
   <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/icons/icon-152x152.png') }}">
-
   
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
@@ -31,10 +29,10 @@
   {% block body %}{% endblock %}
 
   <!-- JS -->
-  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js') }}"></script> 
-  <script type="text/javascript" src="{{ url_for('static', filename='js/init.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/materialize.min.js') }}"></script> 
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8c2176c0498220eb483283e92/472f26c09518565d3efe36c35.js");</script>
 
 </body>
