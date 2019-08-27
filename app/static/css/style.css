@@ -185,7 +185,7 @@ nav.nav-center ul li a {
   margin-top: 3px !important;
 }
 .connect-icon{
-  max-width: 300px;
+  max-width: 150px;
 }
 .connect-div{
   text-align: center;
@@ -225,25 +225,30 @@ nav{
 }
 @media only screen and (max-width: 1310px) {
   .connect-icon{
-    max-width: 250px;
+    max-width: 100px;
   }
 }
 @media only screen and (max-width: 1080px) {
   .connect-icon{
-    max-width: 200px;
+    max-width: 100px;
   }
 }
 @media only screen and (max-width: 716px) {
   .connect-icon{
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 @media only screen and (max-width: 601px) {
   .connect-icon{
-    max-width: 250px;
+    max-width: 100px;
   }
   .connect-heading{
     margin-bottom: 20px;
   }
 }
 
+@media only screen and (max-width: 346px) {
+  .connect-icon{
+    max-width: 80px;
+  }
+}
