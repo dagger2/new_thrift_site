@@ -106,4 +106,6 @@ ENV/
 # other stuff
 notes
 
-
+# VSCode stuff
+/.vscode
+.vscode/settings.json
