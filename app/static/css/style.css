@@ -185,6 +185,13 @@ h1, h2, h3, h4, h5, p, input, label{
 .connect-icon{
   max-width: 150px;
 }
+.footer-info-credits{
+  margin-right: 100px;
+}
+.footer-info-copyright{
+  margin-left: 100px;
+  text-align: center;
+}
 .connect-div{
   text-align: center;
 }
