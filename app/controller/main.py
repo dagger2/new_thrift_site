@@ -46,10 +46,6 @@ def happenings():
 def pop_up_shops():
     return render_template('main/events.html')
 
-@bp.route('/hello')
-def hello():
-    return render_template('main/hello.html')
-
 @bp.route('/dino-game')
 def dino_game():
     return render_template('main/dino_game.html')
