@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-
+from flask_compress import Compress
 
 def create_app():
     app = Flask(
@@ -33,4 +33,5 @@ def create_app():
     app.register_blueprint(main.bp)
     app.register_blueprint(pwa.bp)
 
+    Compress(app)
     return app
