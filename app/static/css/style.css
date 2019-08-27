@@ -179,6 +179,9 @@ nav.nav-center ul li a {
 .spacer{
   margin-top: 3px !important;
 }
+.custom-blue{
+  background-color: #91c7d7;
+}
 h1, h2, h3, h4, h5, p, input, label{
   font-family: "Avenir-next", sans-serif;
 }
