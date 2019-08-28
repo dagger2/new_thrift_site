@@ -1,5 +1,27 @@
 {% extends "layout.html" %}
 {% block main %}
+
+{% macro display_resource(link_name, link, photo, external=none)%}
+<div class="col s12 m4">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{ url_for('static', filename='images/members/'+photo) }}" 
+        alt="Resource for {{link_name}}, {{position}}"/>
+      <span class="card-title">{{ name }}</span>
+    </div>
+    <div class="card-content">
+      <a href="
+        {% if external is none %}
+        {{url_for(link)}}
+        {% else %}
+        {{link}}
+        {% endif %}
+      "> {{ link_name }} </a>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
   <div class="container">
     <div class="section">
         <h1 class="center-align move-down"> Resources </h1> 
