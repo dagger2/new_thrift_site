@@ -30,8 +30,14 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{{ url_for('static', filename='images/popup_shop.webp') }}" 
-      alt="Background image of a pop-up shop."></div>
+    <div class="parallax">
+      <picture class="home-logo-nav">
+          <source srcset="{{ url_for('static', filename='images/popup_shop.webp') }}" type="image/webp">
+          <source srcset="{{ url_for('static', filename='images/popup_shop.jpg') }}" type="image/jpeg"> 
+          <img class="home-logo-nav" src="{{ url_for('static', filename='images/popup-shop.jpg') }}" 
+            alt="Background image of a pop-up shop.">
+      </picture>
+      </div>
   </div>
 
   <div class="container">
@@ -83,8 +89,14 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{{ url_for('static', filename='images/flowers.webp') }}" 
-      alt="Background image of Cornell University."></div>
+    <div class="parallax">
+      <picture class="home-logo-nav">
+          <source srcset="{{ url_for('static', filename='images/flowers.webp') }}" type="image/webp">
+          <source srcset="{{ url_for('static', filename='images/flowers.jpg') }}" type="image/jpeg"> 
+          <img class="home-logo-nav" src="{{ url_for('static', filename='images/flowers.jpg') }}" 
+            alt="Background image of Cornell University.">
+      </picture>
+    </div>
   </div>
 
   <div class="container">
