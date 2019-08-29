@@ -14,6 +14,7 @@
     </div>
 </div>
 {% endmacro %}
+
 <!-- <div class="fixed-action-btn">
   <a class="btn-floating btn-large red">
     <i class="large material-icons" id="refresh">refresh</i>
@@ -30,14 +31,14 @@
         </div>
       </div>
     </div>
-    <div class="parallax">
-      <picture class="home-logo-nav">
+    <div class="parallax">    
+      <picture>
           <source srcset="{{ url_for('static', filename='images/popup_shop.webp') }}" type="image/webp">
           <source srcset="{{ url_for('static', filename='images/popup_shop.jpg') }}" type="image/jpeg"> 
-          <img class="home-logo-nav" src="{{ url_for('static', filename='images/popup-shop.jpg') }}" 
+          <img src="{{ url_for('static', filename='images/popup-shop.jpg') }}" 
             alt="Background image of a pop-up shop.">
       </picture>
-      </div>
+    </div>
   </div>
 
   <div class="container">
@@ -90,10 +91,10 @@
       </div>
     </div>
     <div class="parallax">
-      <picture class="home-logo-nav">
+      <picture>
           <source srcset="{{ url_for('static', filename='images/flowers.webp') }}" type="image/webp">
           <source srcset="{{ url_for('static', filename='images/flowers.jpg') }}" type="image/jpeg"> 
-          <img class="home-logo-nav" src="{{ url_for('static', filename='images/flowers.jpg') }}" 
+          <img src="{{ url_for('static', filename='images/flowers.jpg') }}" 
             alt="Background image of Cornell University.">
       </picture>
     </div>

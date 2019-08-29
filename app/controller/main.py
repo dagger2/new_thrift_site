@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, render_template, app, redirect, url_for, abort
+    Blueprint, render_template, redirect, url_for, abort
 )
 
 bp = Blueprint('main', __name__)
@@ -7,8 +7,7 @@ bp = Blueprint('main', __name__)
 
 @bp.route('/')
 def index():
-    return render_template('main/index.html',
-                           title='Cornell Thrift')
+    return render_template('main/index.html')
 
 @bp.route('/events/ezras_exchange')
 def ezras_exchange():
