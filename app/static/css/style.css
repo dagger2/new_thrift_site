@@ -2,23 +2,18 @@
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
- *
  * Made By MaterializeCSS.com
  */
-
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
-
 p {
   line-height: 2rem;
 }
-
 .sidenav-trigger {
   color: #26a69a;
 }
-
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -28,7 +23,6 @@ p {
 .parallax-container .section {
   width: 100%;
 }
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -38,13 +32,11 @@ p {
     top: 10%;
   }
 }
-
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
 }
-
 .icon-block {
   padding: 0 15px;
 }
@@ -55,8 +47,6 @@ p {
 footer.page-footer {
   margin: 0;
 }
-
-
 
 /* custom css */
 .instagram-media{
@@ -75,9 +65,6 @@ footer.page-footer {
 .home-logo-below{
   width: 100px;
 }
-/* .home-logo-nav{
-  -webkit-touch-callout: none;
-} */
 
 body{
   -webkit-touch-callout: none;
@@ -97,16 +84,13 @@ body{
   font-family: "Avenir-next";
   src: url(../fonts/avenir-next/AvenirNextLTPro-Regular.otf);
 }
-
 .main-title{
   font-size: 100px;
 }
-
 .main-title, .catchy-phrase{
   font-family: "Avenir-next", sans-serif;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
-
 nav.nav-center ul {
   text-align: center;
 }
@@ -126,35 +110,28 @@ nav.nav-center ul li a {
 .create-gap-right{
   margin-right: 80px;
 }
-
 .avenir{
   font-family: "Avenir-next", sans-serif;
 }
-
 .mission-blurb{
   font-size: 22px;
   line-height: 2.0;
 }
-
 .orange-text-special{
   color: #ff6e16;
 }
 .description{
   text-align: justify !important;
 }
-
 .our-mission{
   font-size: 40px;
 }
-
 .sidenav{
   text-align: center;
 }
-
 .event-holder{
   max-width: 500px;
 }
-
 .learn-more{
   background-color: #ff6e16;
 }
