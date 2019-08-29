@@ -69,7 +69,7 @@ footer.page-footer {
 
 .home-logo, .home-logo-nav{
   width: 150px;
-  transition: width .15s;
+  transition: width .1s;
 }
 
 .home-logo-below{
