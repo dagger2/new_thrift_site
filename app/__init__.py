@@ -33,5 +33,4 @@ def create_app():
     app.register_blueprint(main.bp)
     app.register_blueprint(pwa.bp)
 
-    Compress(app)
-    return app
+    return Compress(app)
