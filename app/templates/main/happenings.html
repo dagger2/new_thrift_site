@@ -51,10 +51,19 @@
     <div class="section">
     <h1 class="center-align move-down"> Happenings </h1> 
         <div class="row">
+            {{ display_event("Weekly Meeting", "There are weekly Cornell Thrift meetings Monday's 6:30 – 7:30 PM in Willard
+                Straight Hall, Room 413.", 
+                'images/wsh.jpg') }}
             {{ display_event("Ezra's Exchange", "Ezra's Exchange is a closet space open in the browsing 
                 library in Willard Straight Hall. The closet's slogan is 'Free to Give, Free to Take.' 
                 Here you can donate clothes and find new ones for free! Open whenever Willard Straight is!", 
                 'images/exchangeclosets.jpg') }}
+          
+        </div>
+        <div class="row">
+            {{ display_event('Pop-Up-Shops', "Want to start shopping sustainably? Stop by one of our pop-up shops and you'll 
+                find free or low-price clothing from other Cornell students and local thrift shops!", 
+                'images/pop-up2.jpg') }}
             {{ display_event('Behind the Seams', "Behind the Seams is a photo campaign to get people thinking 
                 about the value of clothes by sharing the stories they hold. We're hoping to reduce waste by having 
                 people rethink the way they see their clothes. New photos go up on our Cornell Thrift Instagram 
@@ -62,13 +71,10 @@
                 "https://www.instagram.com/cornellthrift/?utm_source=ig_embed", 'external' ) }}
         </div>
         <div class="row">
-            {{ display_event('Pop-Up-Shops', "Want to start shopping sustainably? Stop by one of our pop-up shops and you'll 
-                find free or low-price clothing from other Cornell students and local thrift shops!", 
-                'images/pop-up2.jpg') }}
              {{ display_event("Mending Workshops", "We'll teach you how to sew on that missing button, fix a tear, 
                 or hem your dress! Come find us in the Willard Straight Hall International Lounge. Stay tuned for information
                 on upcoming sessions!", 'images/mending_workshop.jpg') }}
-            </div>
+        </div>
     </div>
 </div>
 {% include "chunks/footer.html" %}
