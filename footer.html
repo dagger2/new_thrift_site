@@ -1,0 +1,35 @@
+<footer class="page-footer custom-blue">
+    <div class="container">
+      <div class="col l12">
+        <h5 class="white-text center-align">Connect</h5>
+        <div class="row">
+            <div class="col s4 m4 l4 connect-div">
+                <a href="mailto:cornellthrift@gmail.com">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/mail.svg') }}" 
+                        alt="A picture of an E-Mail logo, linking to the Cornell Thrift's Email. "/>
+                </a>
+            </div> 
+            <div class="col s4 m4 l4 connect-div">
+                <a href="https://www.facebook.com/cornellthrift/">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/facebook.svg') }}" 
+                        alt="A picture of the Facebook logo, linking to the Cornell Thrift's Facebook Page."/>
+                </a>
+            </div> 
+            <div class="col s4 m4 l4 connect-div">
+                <a href="https://www.instagram.com/cornellthrift/">
+                    <img class="connect-icon" src="{{ url_for('static', filename='images/instagram.svg') }}" 
+                        alt="A picture of the Instagram logo, linking to the Cornell Thrift's Instagram Page."/>
+                </a>
+            </div> 
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <span class="footer-info-copyright">
+            Copyright © 2019 - 2020
+        </span>
+        <span class="footer-info-credits">
+          <a href="{{url_for('main.credits')}}">Credits</a>
+        </span>
+    </div>
+  </footer>
