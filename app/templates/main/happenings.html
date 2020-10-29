@@ -47,12 +47,13 @@
 </div>
 {% endmacro %}
 
+{%set zoom = "<a href='https://cornell.zoom.us/j/93593129634?pwd=Tk5MOW4xKy9FYXFvZkZMMi85UFptZz09'>Zoom</a>" %}
 <div class="container">
     <div class="section">
     <h1 class="center-align move-down"> Happenings </h1> 
         <div class="row">
-            {{ display_event("Weekly Meeting", "There are weekly Cornell Thrift meetings Monday's 6:30 – 7:30 PM in Willard
-                Straight Hall, Room 413.", 
+		{{ display_event("Weekly Meeting", "Join us on Zoom 
+		every Monday at 7 ET to get involved. We update on club events, craft, chat about sustainable fashion, and so much more - all are welcome!", 
                 'images/wsh.jpg') }}
             {{ display_event("Ezra's Exchange", "Ezra's Exchange is a closet space open in the browsing 
                 library in Willard Straight Hall. The closet's slogan is 'Free to Give, Free to Take.' 
@@ -61,8 +62,10 @@
           
         </div>
         <div class="row">
-            {{ display_event('Pop-Up-Shops', "Want to start shopping sustainably? Stop by one of our pop-up shops and you'll 
-                find free or low-price clothing from other Cornell students and local thrift shops!", 
+		{{ display_event('Pop-Up-Shops', "Want to start shopping sustainably? Check nextbest.com for our 
+			online store, or stop by
+	    one of our pop-up shops to find free/low-price clothing from other Cornell students and local thrift shops!
+	    ", 
                 'images/pop-up2.jpg') }}
             {{ display_event('Behind the Seams', "Behind the Seams is a photo campaign to get people thinking 
                 about the value of clothes by sharing the stories they hold. We're hoping to reduce waste by having 
@@ -71,9 +74,8 @@
                 "https://www.instagram.com/cornellthrift/?utm_source=ig_embed", 'external' ) }}
         </div>
         <div class="row">
-             {{ display_event("Mending Workshops", "We'll teach you how to sew on that missing button, fix a tear, 
-                or hem your dress! Come find us in the Willard Straight Hall International Lounge. Stay tuned for information
-                on upcoming sessions!", 'images/mending_workshop.jpg') }}
+             {{ display_event("Mending Workshops", "Tore your favorite shirt? Want to restyle an old pair of jeans?
+	     We'll teach you how to sew on that missing button, fix a tear, or emborider. Stay tuned for information on upcoming sessions. ", 'images/mending_workshop.jpg') }}
         </div>
     </div>
 </div>

@@ -28,13 +28,13 @@
 
   <div class="container">
     <div class="section">
-      <h1 class="center-align move-down"> Meet the Members </h1> 
+      <h1 class="center-align move-down"> Meet the Team </h1> 
       {% for member in members %}
         {% if loop.index % 3 == 1 %}
         <div class="row">
         {% endif %}
         {{ display_member(member[0], member[1], member[2]) }}
-        {% if loop.index % 3 == 0 %}
+        {% if loop.index % 3 == 0 or loop.index == members|length %}
         </div>
         {% endif %}
       {% endfor %}
